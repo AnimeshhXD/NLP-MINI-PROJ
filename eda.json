@@ -1,0 +1,380 @@
+{
+ "speeches": {
+  "train": 87,
+  "val": 18,
+  "test": 20
+ },
+ "tokens": {
+  "train": 336238,
+  "val": 66643,
+  "test": 85917
+ },
+ "empty_tokens": 0,
+ "vocab_train": 14417,
+ "vocab_lemma": 12801,
+ "oov_test_pct": 1.9507198808152053,
+ "hapax_pct": 38.47541097315669,
+ "sent_count_train": 15643,
+ "sent_mean": 21.482004730550408,
+ "sent_median": 19.0,
+ "sent_max": 727,
+ "sent_min": 1,
+ "sent_p95": 46.0,
+ "sent_gt40_pct": 7.498561656971169,
+ "punct_counts": {
+  "train": {
+   "O": 300910,
+   "COMMA": 19685,
+   "PERIOD": 15452,
+   "QUESTION": 191
+  },
+  "val": {
+   "O": 59452,
+   "COMMA": 3880,
+   "PERIOD": 3292,
+   "QUESTION": 19
+  },
+  "test": {
+   "O": 77027,
+   "COMMA": 5180,
+   "PERIOD": 3667,
+   "QUESTION": 43
+  }
+ },
+ "top20": [
+  [
+   "the",
+   21511
+  ],
+  [
+   "of",
+   13998
+  ],
+  [
+   "and",
+   12419
+  ],
+  [
+   "to",
+   11328
+  ],
+  [
+   "in",
+   7385
+  ],
+  [
+   "a",
+   5797
+  ],
+  [
+   "we",
+   5496
+  ],
+  [
+   "our",
+   5482
+  ],
+  [
+   "that",
+   4351
+  ],
+  [
+   "for",
+   4014
+  ],
+  [
+   "is",
+   3553
+  ],
+  [
+   "will",
+   2776
+  ],
+  [
+   "be",
+   2766
+  ],
+  [
+   "i",
+   2693
+  ],
+  [
+   "this",
+   2645
+  ],
+  [
+   "have",
+   2396
+  ],
+  [
+   "it",
+   2392
+  ],
+  [
+   "are",
+   2144
+  ],
+  [
+   "as",
+   1994
+  ],
+  [
+   "with",
+   1991
+  ]
+ ],
+ "top20_share_pct": 34.83574134987717,
+ "before_comma": [
+  [
+   "people",
+   198
+  ],
+  [
+   "years",
+   160
+  ],
+  [
+   "now",
+   160
+  ],
+  [
+   "year",
+   146
+  ],
+  [
+   "and",
+   139
+  ],
+  [
+   "congress",
+   126
+  ],
+  [
+   "world",
+   125
+  ],
+  [
+   "government",
+   122
+  ],
+  [
+   "us",
+   122
+  ],
+  [
+   "america",
+   116
+  ]
+ ],
+ "before_period": [
+  [
+   "world",
+   269
+  ],
+  [
+   "people",
+   187
+  ],
+  [
+   "it",
+   181
+  ],
+  [
+   "peace",
+   172
+  ],
+  [
+   "america",
+   152
+  ],
+  [
+   "year",
+   128
+  ],
+  [
+   "years",
+   118
+  ],
+  [
+   "them",
+   113
+  ],
+  [
+   "nation",
+   110
+  ],
+  [
+   "government",
+   106
+  ]
+ ],
+ "bigram_before_comma": [
+  [
+   "the world",
+   85
+  ],
+  [
+   "the congress",
+   60
+  ],
+  [
+   "years ago",
+   57
+  ],
+  [
+   "fellow citizens",
+   55
+  ],
+  [
+   "the people",
+   54
+  ],
+  [
+   "mr speaker",
+   50
+  ],
+  [
+   "of course",
+   45
+  ],
+  [
+   "united states",
+   43
+  ],
+  [
+   "our people",
+   40
+  ],
+  [
+   "fellow americans",
+   40
+  ]
+ ],
+ "after_comma": [
+  [
+   "and",
+   3038
+  ],
+  [
+   "the",
+   1234
+  ],
+  [
+   "we",
+   1040
+  ],
+  [
+   "to",
+   678
+  ],
+  [
+   "i",
+   644
+  ],
+  [
+   "but",
+   611
+  ],
+  [
+   "in",
+   510
+  ],
+  [
+   "a",
+   379
+  ],
+  [
+   "as",
+   326
+  ],
+  [
+   "that",
+   290
+  ]
+ ],
+ "p_comma_before": {
+  "and": 0.245,
+  "but": 0.423,
+  "which": 0.122,
+  "that": 0.067,
+  "the": 0.057,
+  "of": 0.01
+ },
+ "pos_sample_tokens": 106424,
+ "pos_top": {
+  "O": [
+   [
+    "IN",
+    15.4
+   ],
+   [
+    "NN",
+    13.2
+   ],
+   [
+    "DT",
+    12.5
+   ],
+   [
+    "JJ",
+    9.4
+   ],
+   [
+    "NNS",
+    5.8
+   ]
+  ],
+  "COMMA": [
+   [
+    "NN",
+    35.0
+   ],
+   [
+    "NNS",
+    19.0
+   ],
+   [
+    "NNP",
+    9.7
+   ],
+   [
+    "RB",
+    7.4
+   ],
+   [
+    "JJ",
+    6.9
+   ]
+  ],
+  "PERIOD": [
+   [
+    "NN",
+    44.0
+   ],
+   [
+    "NNS",
+    21.0
+   ],
+   [
+    "NNP",
+    6.0
+   ],
+   [
+    "JJ",
+    5.5
+   ],
+   [
+    "VBN",
+    4.3
+   ]
+  ]
+ },
+ "digit_tokens_pct": 0.7952700170712412,
+ "hyphen_tokens_pct": 0.3976350085356206,
+ "apos_tokens_pct": 0.5278998804418299,
+ "upper_tokens_pct": 0.12223484555582653,
+ "cap_tokens_pct": 9.520042350953789,
+ "fillers_in_ref": 1,
+ "repeats_in_ref": 96,
+ "dup_speeches": 0
+}

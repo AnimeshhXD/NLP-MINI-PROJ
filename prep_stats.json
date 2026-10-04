@@ -1,0 +1,20 @@
+{
+ "raw_chars": 2897946,
+ "raw_ws_tokens": 490698,
+ "raw_distinct_surface": 31252,
+ "raw_lines": 10652,
+ "title_lines_removed": 118,
+ "bracket_annotations": 623,
+ "dashes": 1924,
+ "dotted_abbrev": 56,
+ "title_abbrev": 194,
+ "clean_tokens": 488798,
+ "clean_distinct_cased": 18736,
+ "clean_distinct_lower": 16756,
+ "asr_distinct": 16674,
+ "asr_chars": 2817292,
+ "upper_chars_ref": 49191,
+ "punct_marks_ref": 51409,
+ "apos_removed": 2742,
+ "labelled_pct": 10.517432559053024
+}

@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-04T17:47:17Z",
+  "seed": 42,
+  "python": "3.11.7",
+  "nltk": "3.10.3",
+  "talks_total": 125,
+  "talks_train": 87,
+  "talks_val": 18,
+  "talks_test": 20,
+  "words_total": 489643,
+  "label_dist": {
+    "O": 439783,
+    "PERIOD": 24671,
+    "COMMA": 24934,
+    "QUESTION": 255
+  },
+  "data_hash_md5": "d1e04ce52f9c",
+  "note": "Text from NLTK state_union + inaugural (public domain). NOT real Whisper ASR output. See BLOCKED.md for audio/ASR status."
+}

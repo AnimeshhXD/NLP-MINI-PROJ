@@ -1,0 +1,24 @@
+{
+  "bertscore_model": "distilbert-base-uncased",
+  "bertscore_device": "cpu",
+  "METEOR": {
+    "raw_asr": 0.9108223160569736,
+    "crf_pipeline": 0.9637559902479926,
+    "bert_punct": null
+  },
+  "BERTScore_F1": {
+    "raw_asr": 0.9254142642021179,
+    "crf_pipeline": 0.9681442975997925,
+    "bert_punct": null
+  },
+  "BERTScore_P": {
+    "raw_asr": 0.9296108484268188,
+    "crf_pipeline": 0.9667579531669617,
+    "bert_punct": null
+  },
+  "BERTScore_R": {
+    "raw_asr": 0.9212603569030762,
+    "crf_pipeline": 0.9695359468460083,
+    "bert_punct": null
+  }
+}

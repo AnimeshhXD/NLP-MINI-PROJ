@@ -1,0 +1,413 @@
+{
+ "E1_majority": {
+  "COMMA": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 3880
+  },
+  "PERIOD": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 3292
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 19
+  },
+  "macroF1": 0.0,
+  "macroF1_CP": 0.0,
+  "sentF1": 0.0,
+  "acc": 0.8920966943264859
+ },
+ "E1_rule": {
+  "COMMA": {
+   "P": 0.2314777733279936,
+   "R": 0.14896907216494845,
+   "F1": 0.18127646228634153,
+   "n": 3880
+  },
+  "PERIOD": {
+   "P": 0.05731119442956615,
+   "R": 0.03250303766707169,
+   "F1": 0.04148090715254894,
+   "n": 3292
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 19
+  },
+  "macroF1": 0.07425245647963015,
+  "macroF1_CP": 0.11137868471944523,
+  "sentF1": 0.042101197373503284,
+  "acc": 0.8548684783098
+ },
+ "E2": {
+  "Word only": {
+   "macroF1_CP": 0.05482858222037031
+  },
+  "BoW window (+-2)": {
+   "macroF1_CP": 0.20166743837433204
+  },
+  "TF-IDF window (+-2)": {
+   "macroF1_CP": 0.16551230772205322
+  },
+  "Positional window (+-2)": {
+   "macroF1_CP": 0.3690116923060378
+  },
+  "Positional window + shape + n-grams": {
+   "macroF1_CP": 0.3878973792858973
+  },
+  "Word2Vec window (+-2, 50-d)": {
+   "macroF1_CP": 0.1471931942508201
+  }
+ },
+ "E2b_LR_alpha": {
+  "1e-07": 0.3948079392705556,
+  "1e-06": 0.38854222102715574,
+  "1e-05": 0.3623456773770498,
+  "0.0001": 0.2256447207143113
+ },
+ "E3_LR_best": {
+  "alpha": 1e-07,
+  "COMMA": {
+   "P": 0.43409316154608524,
+   "R": 0.22577319587628866,
+   "F1": 0.2970498474059003,
+   "n": 3880
+  },
+  "PERIOD": {
+   "P": 0.5806185567010309,
+   "R": 0.42770352369380316,
+   "F1": 0.4925660311352108,
+   "n": 3292
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 19
+  },
+  "macroF1": 0.26320529284703703,
+  "macroF1_CP": 0.3948079392705556,
+  "sentF1": 0.49416274612301797,
+  "acc": 0.9093828309049713
+ },
+ "E3_grid": {
+  "0.01|0.01": 0.3960282761021433,
+  "0.01|0.1": 0.404944646367013,
+  "0.1|0.01": 0.4021152753109189,
+  "0.1|0.1": 0.4059475077662548,
+  "0.5|0.01": 0.41111946686016,
+  "0.5|0.1": 0.40796812113869196
+ },
+ "E3_best_c": [
+  0.5,
+  0.01
+ ],
+ "E3_window": {
+  "1": 0.3865099575051163,
+  "2": 0.41111946686016,
+  "3": 0.4164186658400672
+ },
+ "E3_best_window": 3,
+ "E3_iters": {
+  "50": 0.404525748851545,
+  "100": 0.41111946686016,
+  "200": 0.41258235060851145
+ },
+ "final_iters": 200,
+ "E4_val": {
+  "COMMA": {
+   "P": 0.43797348484848486,
+   "R": 0.23840206185567012,
+   "F1": 0.30874499332443256,
+   "n": 3880
+  },
+  "PERIOD": {
+   "P": 0.5992277992277992,
+   "R": 0.47144592952612396,
+   "F1": 0.527711662699762,
+   "n": 3292
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 19
+  },
+  "macroF1": 0.2788188853413982,
+  "macroF1_CP": 0.4182283280120973,
+  "sentF1": 0.5294017963057109,
+  "acc": 0.9115586033041729
+ },
+ "E4_test": {
+  "COMMA": {
+   "P": 0.4925657643919176,
+   "R": 0.2494208494208494,
+   "F1": 0.3311546840958606,
+   "n": 5180
+  },
+  "PERIOD": {
+   "P": 0.5755659121171771,
+   "R": 0.47150259067357514,
+   "F1": 0.5183630640083945,
+   "n": 3667
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 43
+  },
+  "macroF1": 0.2831725827014184,
+  "macroF1_CP": 0.42475887405212753,
+  "sentF1": 0.5207682000893256,
+  "acc": 0.9149178858665922
+ },
+ "E4_test_per_speech": [
+  0.44301938086468473,
+  0.4291723838079266,
+  0.4314319569228,
+  0.359245867768595,
+  0.4115055713915522,
+  0.44415971594144643,
+  0.3661805281828932,
+  0.45370722386526907,
+  0.4811522720117536,
+  0.48486842105263156,
+  0.35624224441304153,
+  0.3809637995049505,
+  0.3976914133864806,
+  0.44042949271989895,
+  0.383341003221353,
+  0.43796317089602516,
+  0.43210021202990734,
+  0.39809634060068166,
+  0.31300950132118965,
+  0.3821637265203045
+ ],
+ "confusion": [
+  [
+   75586,
+   862,
+   579,
+   0
+  ],
+  [
+   3209,
+   1292,
+   676,
+   3
+  ],
+  [
+   1472,
+   466,
+   1729,
+   0
+  ],
+  [
+   20,
+   3,
+   20,
+   0
+  ]
+ ],
+ "E4_test_LR": {
+  "COMMA": {
+   "P": 0.47619047619047616,
+   "R": 0.23552123552123552,
+   "F1": 0.31516404029966416,
+   "n": 5180
+  },
+  "PERIOD": {
+   "P": 0.5527547713359741,
+   "R": 0.4185983092446141,
+   "F1": 0.47641216635630046,
+   "n": 3667
+  },
+  "QUESTION": {
+   "P": 0.2,
+   "R": 0.023255813953488372,
+   "F1": 0.041666666666666664,
+   "n": 43
+  },
+  "macroF1": 0.2777476244408771,
+  "macroF1_CP": 0.3957881033279823,
+  "sentF1": 0.47689463955637706,
+  "acc": 0.9122990793440181
+ },
+ "E4_test_rule": {
+  "COMMA": {
+   "P": 0.2564975247524752,
+   "R": 0.16003861003861003,
+   "F1": 0.19709938183547313,
+   "n": 5180
+  },
+  "PERIOD": {
+   "P": 0.04736186123805567,
+   "R": 0.031088082901554404,
+   "F1": 0.037537043134672377,
+   "n": 3667
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 43
+  },
+  "macroF1": 0.07821214165671517,
+  "macroF1_CP": 0.11731821248507275,
+  "sentF1": 0.03792708844204676,
+  "acc": 0.8581887170175867
+ },
+ "E4_test_majority": {
+  "COMMA": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 5180
+  },
+  "PERIOD": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 3667
+  },
+  "QUESTION": {
+   "P": 0.0,
+   "R": 0.0,
+   "F1": 0.0,
+   "n": 43
+  },
+  "macroF1": 0.0,
+  "macroF1_CP": 0.0,
+  "sentF1": 0.0,
+  "acc": 0.8965280445080718
+ },
+ "E5_learning_curve": {
+  "0.1": {
+   "tokens": 31737,
+   "macroF1": 0.3058020769962122
+  },
+  "0.25": {
+   "tokens": 108527,
+   "macroF1": 0.3581606314010182
+  },
+  "0.5": {
+   "tokens": 181849,
+   "macroF1": 0.3891286633060166
+  },
+  "1.0": {
+   "tokens": 336238,
+   "macroF1": 0.42475887405212753
+  }
+ },
+ "truecase_lex_size": 1177,
+ "apos_lex_size": 74,
+ "noise_stats": {
+  "clean_tokens": 85917,
+  "noisy_tokens": 90221
+ },
+ "E6_stage_clean": {
+  "Raw ASR-style text (no processing)": {
+   "strictWER": 18.516707985614023,
+   "contentWER": 0.0,
+   "BLEU": 65.13470002639137,
+   "chrF": 88.64352659222678,
+   "ROUGE1": 99.36468198849161,
+   "ROUGEL": 99.36468198849161
+  },
+  "+ punctuation restoration (CRF)": {
+   "strictWER": 16.944260158059524,
+   "contentWER": 0.0,
+   "BLEU": 68.92370273845182,
+   "chrF": 89.87894979808013,
+   "ROUGE1": 99.36468198849161,
+   "ROUGEL": 99.36468198849161
+  },
+  "+ truecasing": {
+   "strictWER": 13.479288150191465,
+   "contentWER": 0.0,
+   "BLEU": 77.6510611957203,
+   "chrF": 93.56750776172395,
+   "ROUGE1": 99.36468198849161,
+   "ROUGEL": 99.36468198849161
+  },
+  "+ apostrophe restoration (full pipeline)": {
+   "strictWER": 13.300045392646393,
+   "contentWER": 0.0,
+   "BLEU": 78.01134405434733,
+   "chrF": 93.70563498667404,
+   "ROUGE1": 99.76950848760296,
+   "ROUGEL": 99.76950848760296
+  }
+ },
+ "E6_oracle_punct": {
+  "strictWER": 2.0461608296379064,
+  "contentWER": 0.0,
+  "BLEU": 95.91803577229267,
+  "chrF": 98.52326093627588,
+  "ROUGE1": 99.76950848760296,
+  "ROUGEL": 99.76950848760296
+ },
+ "case_acc_pred": 94.7879930630725,
+ "case_acc_oracle": 98.092344937556,
+ "case_acc_lowercase_only": 90.78529278256923,
+ "E6_noisy": {
+  "Noisy ASR text (no processing)": {
+   "strictWER": 23.52619388479579,
+   "contentWER": 5.009485899181768,
+   "BLEU": 61.46913977554893,
+   "chrF": 87.04189975653492
+  },
+  "Pipeline without disfluency removal": {
+   "strictWER": 18.35259611019938,
+   "contentWER": 5.009485899181768,
+   "BLEU": 72.80768045367147,
+   "chrF": 91.95386098131608
+  },
+  "Full pipeline (with disfluency removal)": {
+   "strictWER": 13.316340188786851,
+   "contentWER": 0.04422873238125167,
+   "BLEU": 77.99001291939739,
+   "chrF": 93.69785987379689
+  }
+ },
+ "disfl_collateral_tokens_removed_clean": 18,
+ "disfl_tokens_removed_noisy": 4302,
+ "disfl_exact_recovery_pct": 25.0,
+ "disfl_injected": 4304,
+ "disfl_residual_extra_tokens": 2,
+ "E6_segmentation": {
+  "proposed": {
+   "blocks": 7929,
+   "line_conform": 1.0,
+   "cps_conform": 0.8306217681927103,
+   "end_function_word": 0.001513431706394249,
+   "ends_at_ref_boundary": 0.11010215664018161
+  },
+  "baseline": {
+   "blocks": 6056,
+   "line_conform": 0.683454425363276,
+   "cps_conform": 0.86278071334214,
+   "end_function_word": 0.3611294583883752,
+   "ends_at_ref_boundary": 0.0833883751651255
+  }
+ },
+ "sample": {
+  "id": "in_1897-McKinley",
+  "ref": "Fellow citizens, In obedience to the will of the people, and in their presence, by the authority vested in me by this oath, I assume the arduous and responsible duties of President of the United States, relying upon the support of my countrymen and invoking",
+  "asr_input": "fellow citizens in obedience to the will of the people and in their presence by the authority vested in me by this oath i assume the arduous and responsible duties of president of the united states relying upon the support of my countrymen and invoking",
+  "output": "Fellow citizens, in obedience to the will of the people, and in their presence by the authority vested in me by this oath I assume the arduous and responsible duties of President of the United States. Relying upon the support of my countrymen, and invoking",
+  "noisy_input": "fellow citizens in obedience to the will of the people and in their presence by the authority vested vested in me uh by this oath i assume the arduous and responsible duties of president of the united states relying upon the support of my countrymen and invoking the guidance of",
+  "noisy_output": "Fellow citizens, in obedience to the will of the people, and in their presence by the authority vested in me by this oath I assume the arduous and responsible duties of President of the United States. Relying upon the support of my countrymen, and invoking"
+ },
+ "speed_words_per_sec": 108662.52263377204,
+ "total_runtime_s": 326.8161997795105
+}
