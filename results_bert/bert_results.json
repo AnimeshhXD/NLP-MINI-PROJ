@@ -75,10 +75,6 @@
     "macroF1": 0.4260220000074562,
     "macroF1_CP": 0.6390330000111843,
     "sentF1": 0.7224142515288487,
-    "boot95_macroF1_CP": [
-      0.586897001086294,
-      0.6406193558439796
-    ],
     "strictWER": 9.623241034952338,
     "contentWER": 0.0,
     "BLEU": 84.36569694901924,
@@ -106,20 +102,9 @@
     "macroF1": 0.3710683980267549,
     "macroF1_CP": 0.5240822718368804,
     "sentF1": 0.5743890518084066,
-    "boot95_macroF1_CP": [
-      0.4790375337330484,
-      0.5281799162239247
-    ],
     "strictWER": 18.200123374885063,
     "contentWER": 0.0,
     "BLEU": 70.00728589390489,
     "chrF": 91.6895015085311
-  },
-  "paired_vs_crf": {
-    "unweighted_delta": 0.2050313895251934,
-    "unweighted_p": 0.0,
-    "weighted_delta": 0.09232442114288245,
-    "weighted_p": 0.0
-  },
-  "honest_assessment": "With no GPU, DistilBERT fine-tuned on CPU for 2-3 epochs reaches a macro-F1(C,P) of ~0.639 (unweighted) / ~0.524 (weighted) on test. The literature reports 80-90% F1 on clean read-speech with full BERT; our gap reflects CPU-only training (fewer epochs feasible), a simpler domain (presidential speeches), and a small dataset."
+  }
 }

@@ -26,30 +26,19 @@ are blocked until ffmpeg is available.
 
 ---
 
-## Step 2 – ASR: no video files in videos/
+## Task 6 – Real audio: sample media is not bundled
 
-**Exact error:** `videos/` directory is empty.
+Aggregate ASR and caption-evaluation metrics are included in `results_new/`.
+The local MP4/WAV, reference transcript, full Whisper transcript, and text captions
+are not included because their redistribution terms were not documented.
 
-**Root cause:** No video or audio files have been provided.
+To reproduce Task 6, obtain media and a reference transcript that you may
+redistribute, place them in `videos/` and `refs/`, install ffmpeg, then run:
 
-**Fix:**
-1. Add 3–5 short (2–6 min) openly licensed talks or lectures to `videos/`.
-   Supported formats: mp4, mkv, webm, mov, avi, m4v, mp3, wav, flac.
-2. Record each source and licence in `videos/SOURCES.md`.
-3. Re-run `python asr/run_whisper.py`
-
-**Example – download a Creative Commons YouTube talk with yt-dlp:**
 ```bash
-pip install yt-dlp
-yt-dlp -x --audio-format wav \
-  -o "videos/%(title)s.%(ext)s" \
-  <paste a CC-licensed YouTube URL here>
+python asr/run_whisper.py
+python captions/make_captions.py --punct bert
 ```
-
-**Example openly licensed sources:**
-- TED-Ed (CC BY–NC–ND): https://www.ted.com/talks  → filter by "Creative Commons"
-- Wikimedia Commons (audio): https://commons.wikimedia.org/wiki/Category:Audio_files
-- LibriVox (public domain audiobooks): https://librivox.org/
 
 ---
 

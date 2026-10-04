@@ -1,0 +1,24 @@
+{
+  "bertscore_model": "distilbert-base-uncased",
+  "bertscore_device": "cpu",
+  "rendering": "render_speech(asr_words=[w.lower().replace(\"'\",\"\")], pred_labs); same string for all metrics",
+  "meteor_tokenization": "str.split() without lowercasing; matches WER/BLEU/chrF input",
+  "bertscore_notes": [
+    "distilbert-base-uncased lowercases all input; BERTScore therefore",
+    "cannot distinguish capitalisation. Scores are NOT baseline-rescaled."
+  ],
+  "METEOR": {
+    "majority": 0.8758705089930789,
+    "rule": 0.7527874636595211,
+    "crf": 0.9106185273606195,
+    "bert_uw": 0.9385170121368495,
+    "bert_wt": 0.8453408269478067
+  },
+  "BERTScore_F1": {
+    "majority": 0.9272783398628235,
+    "rule": 0.9461441040039062,
+    "crf": 0.9681442975997925,
+    "bert_uw": 0.9817591905593872,
+    "bert_wt": 0.9470782279968262
+  }
+}

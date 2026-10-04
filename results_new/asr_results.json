@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-10-04T20:25:35Z",
+  "video": "videos\\weekly_2015_vra.mp4",
+  "whisper_model": "base.en",
+  "n_ref_words": 424,
+  "n_whisper_words": 428,
+  "wer_cer": {
+    "no_punct": {
+      "description": "EnglishTextNormalizer applied to both (numbers + lowercase + strip punct)",
+      "WER_pct": 1.84,
+      "CER_pct": 1.07
+    },
+    "punct_kept": {
+      "description": "Punct retained as tokens; per-word number normalisation",
+      "WER_pct": 5.99,
+      "CER_pct": 2.36
+    }
+  },
+  "whisper_segment_grouping": {
+    "tsv_resolution_s": 1,
+    "n_tsv_segments": 22,
+    "n_matched": 22,
+    "mean_abs_offset_s": 0.98,
+    "max_abs_offset_s": 4.56,
+    "per_segment": [
+      {
+        "tsv_start_s": 9,
+        "tsv_first_word": "hi",
+        "caption_block_start_s": 9.72,
+        "offset_s": 0.72
+      },
+      {
+        "tsv_start_s": 11,
+        "tsv_first_word": "the",
+        "caption_block_start_s": 11.62,
+        "offset_s": 0.62
+      },
+      {
+        "tsv_start_s": 15,
+        "tsv_first_word": "yet",
+        "caption_block_start_s": 11.62,
+        "offset_s": -3.38
+      },
+      {
+        "tsv_start_s": 22,
+        "tsv_first_word": "fifty",
+        "caption_block_start_s": 22.68,
+        "offset_s": 0.68
+      },
+      {
+        "tsv_start_s": 27,
+        "tsv_first_word": "the",
+        "caption_block_start_s": 27.1,
+        "offset_s": 0.1
+      },
+      {
+        "tsv_start_s": 36,
+        "tsv_first_word": "it",
+        "caption_block_start_s": 36.54,
+        "offset_s": 0.54
+      },
+      {
+        "tsv_start_s": 44,
+        "tsv_first_word": "countless",
+        "caption_block_start_s": 45.14,
+        "offset_s": 1.14
+      },
+      {
+        "tsv_start_s": 51,
+        "tsv_first_word": "for",
+        "caption_block_start_s": 50.9,
+        "offset_s": -0.1
+      },
+      {
+        "tsv_start_s": 60,
+        "tsv_first_word": "but",
+        "caption_block_start_s": 60.66,
+        "offset_s": 0.66
+      },
+      {
+        "tsv_start_s": 68,
+        "tsv_first_word": "our",
+        "caption_block_start_s": 68.92,
+        "offset_s": 0.92
+      },
+      {
+        "tsv_start_s": 73,
+        "tsv_first_word": "but",
+        "caption_block_start_s": 73.12,
+        "offset_s": 0.12
+      },
+      {
+        "tsv_start_s": 80,
+        "tsv_first_word": "fifty",
+        "caption_block_start_s": 80.2,
+        "offset_s": 0.2
+      },
+      {
+        "tsv_start_s": 87,
+        "tsv_first_word": "we've",
+        "caption_block_start_s": 87.3,
+        "offset_s": 0.3
+      },
+      {
+        "tsv_start_s": 97,
+        "tsv_first_word": "over",
+        "caption_block_start_s": 97.78,
+        "offset_s": 0.78
+      },
+      {
+        "tsv_start_s": 104,
+        "tsv_first_word": "in",
+        "caption_block_start_s": 104.44,
+        "offset_s": 0.44
+      },
+      {
+        "tsv_start_s": 109,
+        "tsv_first_word": "that's",
+        "caption_block_start_s": 104.44,
+        "offset_s": -4.56
+      },
+      {
+        "tsv_start_s": 121,
+        "tsv_first_word": "it's",
+        "caption_block_start_s": 121.18,
+        "offset_s": 0.18
+      },
+      {
+        "tsv_start_s": 124,
+        "tsv_first_word": "and",
+        "caption_block_start_s": 125.14,
+        "offset_s": 1.14
+      },
+      {
+        "tsv_start_s": 135,
+        "tsv_first_word": "because",
+        "caption_block_start_s": 132.4,
+        "offset_s": -2.6
+      },
+      {
+        "tsv_start_s": 141,
+        "tsv_first_word": "the",
+        "caption_block_start_s": 141.84,
+        "offset_s": 0.84
+      },
+      {
+        "tsv_start_s": 149,
+        "tsv_first_word": "together",
+        "caption_block_start_s": 149.56,
+        "offset_s": 0.56
+      },
+      {
+        "tsv_start_s": 159,
+        "tsv_first_word": "thanks",
+        "caption_block_start_s": 159.98,
+        "offset_s": 0.98
+      }
+    ]
+  }
+}

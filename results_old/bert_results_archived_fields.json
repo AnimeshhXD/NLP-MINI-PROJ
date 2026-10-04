@@ -1,0 +1,19 @@
+{
+  "honest_assessment": "With no GPU, DistilBERT fine-tuned on CPU for 2-3 epochs reaches a macro-F1(C,P) of ~0.639 (unweighted) / ~0.524 (weighted) on test. The literature reports 80-90% F1 on clean read-speech with full BERT; our gap reflects CPU-only training (fewer epochs feasible), a simpler domain (presidential speeches), and a small dataset.",
+  "paired_vs_crf": {
+    "unweighted_delta": 0.2050313895251934,
+    "unweighted_p": 0.0,
+    "weighted_delta": 0.09232442114288245,
+    "weighted_p": 0.0
+  },
+  "boot95": {
+    "test_unweighted": [
+      0.586897001086294,
+      0.6406193558439796
+    ],
+    "test_weighted": [
+      0.4790375337330484,
+      0.5281799162239247
+    ]
+  }
+}

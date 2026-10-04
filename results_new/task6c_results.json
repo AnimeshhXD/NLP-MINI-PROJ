@@ -1,0 +1,84 @@
+{
+  "timestamp": "2026-10-04T20:57:54Z",
+  "task1_punct_f1": {
+    "ref_words": 424,
+    "ref_commas": 28,
+    "ref_periods": 24,
+    "whisper_commas_predicted": 28,
+    "whisper_periods_predicted": 26,
+    "bert_commas_predicted": 24,
+    "bert_periods_predicted": 23,
+    "eval_points": 431,
+    "whisper": {
+      "comma": {
+        "P": 0.7857,
+        "R": 0.7857,
+        "F1": 0.7857,
+        "TP": 22,
+        "FP": 6,
+        "FN": 6
+      },
+      "period": {
+        "P": 0.8077,
+        "R": 0.875,
+        "F1": 0.84,
+        "TP": 21,
+        "FP": 5,
+        "FN": 3
+      }
+    },
+    "bert": {
+      "comma": {
+        "P": 0.5,
+        "R": 0.4286,
+        "F1": 0.4615,
+        "TP": 12,
+        "FP": 12,
+        "FN": 16
+      },
+      "period": {
+        "P": 0.6957,
+        "R": 0.6667,
+        "F1": 0.6809,
+        "TP": 16,
+        "FP": 7,
+        "FN": 8
+      }
+    }
+  },
+  "task2_format": {
+    "hybrid": {
+      "n": 31,
+      "pct_within_2x42": 100.0,
+      "pct_within_17cps": 87.1,
+      "pct_ends_func": 54.8,
+      "mid_word_breaks": 0,
+      "mean_dur_s": 4.93,
+      "median_dur_s": 4.9
+    },
+    "whisper_segments": {
+      "n": 39,
+      "pct_within_2x42": 59.0,
+      "pct_within_17cps": 25.6,
+      "pct_ends_func": 23.1,
+      "mid_word_breaks": 0,
+      "mean_dur_s": 3.33,
+      "median_dur_s": 4.16
+    },
+    "baseline": {
+      "n": 30,
+      "pct_within_2x42": 100.0,
+      "pct_within_17cps": 86.7,
+      "pct_ends_func": 36.7,
+      "mid_word_breaks": 0,
+      "mean_dur_s": 5.07,
+      "median_dur_s": 5.18
+    }
+  },
+  "task3_apostrophes": {
+    "whisper": 0,
+    "bert": 2
+  },
+  "task4_segments": 39,
+  "task4_bert_blocks": 30
+}
