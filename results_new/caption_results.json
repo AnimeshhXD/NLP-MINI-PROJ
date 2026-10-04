@@ -1,0 +1,13 @@
+{
+  "timestamp": "2026-10-04T17:48:27Z",
+  "seed": 42,
+  "punct_mode": "none",
+  "files": {
+    "test_sample": {
+      "baseline_blocks": 2,
+      "punct_blocks": 2,
+      "srt": "captions\\test_sample_none.srt",
+      "vtt": "captions\\test_sample_none.vtt"
+    }
+  }
+}

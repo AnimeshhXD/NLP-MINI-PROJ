@@ -1,0 +1,103 @@
+﻿{
+    "segments":  [
+                     {
+                         "words":  [
+                                       {
+                                           "word":  " the",
+                                           "end":  0.3,
+                                           "start":  0
+                                       },
+                                       {
+                                           "word":  " president",
+                                           "end":  0.9,
+                                           "start":  0.4
+                                       },
+                                       {
+                                           "word":  " addressed",
+                                           "end":  1.5,
+                                           "start":  1
+                                       },
+                                       {
+                                           "word":  " congress",
+                                           "end":  2.1,
+                                           "start":  1.6
+                                       },
+                                       {
+                                           "word":  " and",
+                                           "end":  2.4,
+                                           "start":  2.2
+                                       },
+                                       {
+                                           "word":  " the",
+                                           "end":  2.7,
+                                           "start":  2.5
+                                       },
+                                       {
+                                           "word":  " nation",
+                                           "end":  3.2,
+                                           "start":  2.8
+                                       },
+                                       {
+                                           "word":  " on",
+                                           "end":  3.5,
+                                           "start":  3.3
+                                       },
+                                       {
+                                           "word":  " matters",
+                                           "end":  4,
+                                           "start":  3.6
+                                       },
+                                       {
+                                           "word":  " of",
+                                           "end":  4.3,
+                                           "start":  4.1
+                                       },
+                                       {
+                                           "word":  " great",
+                                           "end":  4.7,
+                                           "start":  4.4
+                                       },
+                                       {
+                                           "word":  " importance",
+                                           "end":  5.4,
+                                           "start":  4.8
+                                       },
+                                       {
+                                           "word":  " to",
+                                           "end":  5.7,
+                                           "start":  5.5
+                                       },
+                                       {
+                                           "word":  " all",
+                                           "end":  6,
+                                           "start":  5.8
+                                       },
+                                       {
+                                           "word":  " citizens",
+                                           "end":  6.6,
+                                           "start":  6.1
+                                       },
+                                       {
+                                           "word":  " of",
+                                           "end":  6.9,
+                                           "start":  6.7
+                                       },
+                                       {
+                                           "word":  " this",
+                                           "end":  7.2,
+                                           "start":  7
+                                       },
+                                       {
+                                           "word":  " great",
+                                           "end":  7.6,
+                                           "start":  7.3
+                                       },
+                                       {
+                                           "word":  " country",
+                                           "end":  8.2,
+                                           "start":  7.7
+                                       }
+                                   ]
+                     }
+                 ]
+}
