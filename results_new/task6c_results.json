@@ -80,5 +80,32 @@
     "bert": 2
   },
   "task4_segments": 39,
-  "task4_bert_blocks": 30
+  "task4_bert_blocks": 30,
+  "task4_first5": [
+    {
+      "start": 9.72,
+      "end": 14.46,
+      "text": "Hi everybody, the right to vote is one of the most fundamental rights of any"
+    },
+    {
+      "start": 14.46,
+      "end": 19.84,
+      "text": "democracy. Yet, for too long too many of our fellow citizens were denied that right"
+    },
+    {
+      "start": 19.84,
+      "end": 24.84,
+      "text": "simply because of the color of their skin. Fifty years ago this week, President"
+    },
+    {
+      "start": 24.84,
+      "end": 29.84,
+      "text": "Lyndon Johnson signed a law to change that the voting rights act broke down legal"
+    },
+    {
+      "start": 29.84,
+      "end": 34.664,
+      "text": "barriers that stood between millions of African Americans and their constitutional"
+    }
+  ]
 }

@@ -49,8 +49,6 @@ Number normalisation: Whisper `EnglishTextNormalizer`. No confidence interval.
 *"Punct stripped": `EnglishTextNormalizer` applied to both (normalises numbers, lowercases, strips punct).*
 *Source: `results_new/asr_results.json` → `wer_cer.punct_kept.*`, `wer_cer.no_punct.*`*
 
-*The demonstration MP4/WAV, reference transcript, full Whisper transcript, and caption text are not committed because their redistribution terms were not documented; aggregate metrics are retained.*
-
 ### Sync check — Whisper segment grouping (nearest-by-time)
 
 TSV has 1-second resolution. Caption blocks = Whisper segments.

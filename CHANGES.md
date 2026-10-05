@@ -60,6 +60,65 @@ rounding error is 0.05. Worst observed gap is 0.0340. All checks pass at 0.05.
 - Generated `captions/weekly_2015_vra.srt` and `.vtt` (BERT unweighted punctuation, Whisper word times).
 - Generated `captions/baseline_weekly_2015_vra.srt` and `.vtt` (no punctuation baseline).
 
+## 2026-10-05  Sung-audio stress test (hi_song)
+
+### New files
+| File | Purpose |
+|------|---------|
+| `hi_song_pipeline.py` | End-to-end: Whisper → WER → captions → verify |
+| `asr/hi_song.transcribe.json` | Whisper small, task=transcribe, lang=hi, condition_on_previous_text=False |
+| `asr/hi_song.translate.json`  | Whisper small, task=translate, same flags |
+| `captions/hi_song_translate.srt` / `.vtt` | English captions from translate output |
+| `results_new/song_results.json` | All metrics; no lyric text; quality note |
+
+### Privacy
+`refs/hi_song*` and `videos/hi_song*` already in `.gitignore`.
+Lyric text never written to JSON or printed in full; only error word pairs stored.
+
+### Results (all from results_new/song_results.json)
+- Whisper transcribe vs lyrics: WER=75.36%, CER=27.15%  (expected for sung audio)
+- YouTube auto-captions vs lyrics: WER=20.29%, CER=7.90%
+- English captions: 12 blocks, 100% within 2×42, 91.7% within 17 cps, word-split PASS
+- verify_real.py: PASS (0 errors)
+
+### Normalisation (Devanagari)
+NFC → remove bracketed tags [संगीत] → remove nukta (U+093C) →
+chandrabindu (U+0901) → anusvara (U+0902) → keep only U+0900–U+097F + space.
+
+---
+
+## 2026-10-05  Hindi caption pipeline (Tasks H1–H9)
+
+### New files
+| File | Purpose |
+|------|---------|
+| `asr/run_whisper_hi.py` | Whisper Method A (translate) + B (transcribe) on hi_*.mp4 |
+| `asr/nllb_translate.py` | NLLB 600M translation of Whisper transcribe output |
+| `captions/make_captions_hi.py` | Hindi→English caption SRT/VTT with proportional timing |
+| `tests/test_hi_captions.py` | pytest suite: line length, word order, timestamps, CPS |
+| `eval/compute_hi_eval.py` | WER/CER (Hindi ASR), BLEU/chrF (translation), format metrics, sync |
+| `human_eval/gen_hi_adequacy.py` | Generates 20-segment adequacy CSV (randomised A/B order) |
+| `human_eval/analyse_hi_eval.py` | Analyses completed rating sheets → mean±SD per method |
+| `gen_hindi_results.py` | Aggregates all results → hindi_results.json + HINDI_RESULTS.md |
+| `results_new/hindi_env.json` | Environment check (written this session) |
+| `DEMO_GUIDE.md` | How to demonstrate the pipeline |
+
+### Environment
+- Python 3.11.7, PyTorch 2.14.1+cpu, no CUDA
+- Whisper model: `small` (no GPU; large-v3/medium too slow on CPU)
+- NLLB: `facebook/nllb-200-distilled-600M` (~1.2 GB, downloads on first run)
+- ffmpeg: OK (imageio-ffmpeg 0.6.0 bundle + system PATH)
+
+### Status
+All scripts written and smoke-tested (imports pass, capnlp.segment_captions integrates).
+BLOCKED on `videos/hi_<name>.mp4` — see BLOCKED.md for run instructions.
+
+### Timing method (documented in code + results)
+Within each Whisper segment, caption block times are distributed proportionally
+to character count: t_block_i ∝ chars(block_i) / total_chars_in_segment.
+
+---
+
 ## 2026-10-05  Task 6d
 
 ### New segmenter (segment_captions + Whisper word times)

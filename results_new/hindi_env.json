@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-10-05T04:11:07.397406Z",
+  "python": "3.11.7",
+  "pytorch": "2.14.1+cpu",
+  "cuda": false,
+  "gpu": null,
+  "whisper_model_selected": "small",
+  "whisper_model_reason": "no CUDA; large-v3 requires GPU, medium is too slow on CPU for this domain",
+  "packages": {
+    "openai-whisper": "20250625",
+    "transformers": "5.12.1",
+    "sentencepiece": "0.2.2",
+    "sacrebleu": "2.6.0",
+    "jiwer": "4.0.0",
+    "pytest": "9.1.0",
+    "imageio-ffmpeg": "0.6.0"
+  },
+  "ffmpeg": "ok"
+}

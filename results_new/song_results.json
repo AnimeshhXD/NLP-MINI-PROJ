@@ -1,0 +1,331 @@
+{
+  "timestamp": "2026-10-05T04:42:32.842171Z",
+  "video_sha256_prefix": "cbe2d4165c59164f",
+  "whisper_model": "small",
+  "condition_on_previous_text": false,
+  "n_segments_transcribe": 8,
+  "n_segments_translate": 12,
+  "duration_s": 63.24,
+  "library_versions": {
+    "openai-whisper": "20250625",
+    "jiwer": "4.0.0",
+    "sacrebleu": "2.6.0"
+  },
+  "wer_eval": {
+    "whisper_transcribe": {
+      "n_ref_words": 69,
+      "n_hyp_words": 68,
+      "wer": 0.7536,
+      "cer": 0.27 15,
+      "per_line_wer": [
+        {
+          "line": 1,
+          "n_ref_words": 9,
+          "wer": 1.0
+        },
+        {
+          "line": 2,
+          "n_ref_words": 8,
+          "wer": 1.0
+        },
+        {
+          "line": 3,
+          "n_ref_words": 10,
+          "wer": 0.6
+        },
+        {
+          "line": 4,
+          "n_ref_words": 9,
+          "wer": 0.8889
+        },
+        {
+          "line": 5,
+          "n_ref_words": 9,
+          "wer": 0.8889
+        },
+        {
+          "line": 6,
+          "n_ref_words": 9,
+          "wer": 0.8889
+        },
+        {
+          "line": 7,
+          "n_ref_words": 9,
+          "wer": 0.5556
+        },
+        {
+          "line": 8,
+          "n_ref_words": 6,
+          "wer": 0.8333
+        }
+      ],
+      "first_errors": [
+        {
+          "pos": 0,
+          "ref": "",
+          "hyp": "ना",
+          "type": "insert"
+        },
+        {
+          "pos": 1,
+          "ref": "",
+          "hyp": "ना",
+          "type": "insert"
+        },
+        {
+          "pos": 0,
+          "ref": "नया",
+          "hyp": "या",
+          "type": "substitute"
+        },
+        {
+          "pos": 1,
+          "ref": "नया",
+          "hyp": "एह",
+          "type": "substitute"
+        },
+        {
+          "pos": 2,
+          "ref": "एहसास",
+          "hyp": "सास",
+          "type": "substitute"
+        },
+        {
+          "pos": 4,
+          "ref": "तू",
+          "hyp": "तुज",
+          "type": "substitute"
+        },
+        {
+          "pos": 5,
+          "ref": "जो",
+          "hyp": "मुचको",
+          "type": "substitute"
+        },
+        {
+          "pos": 6,
+          "ref": "मुझको",
+          "hyp": "मेला",
+          "type": "substitute"
+        },
+        {
+          "pos": 7,
+          "ref": "मिला",
+          "hyp": "",
+          "type": "delete"
+        },
+        {
+          "pos": 9,
+          "ref": "नई",
+          "hyp": "नाई",
+          "type": "substitute"
+        }
+      ]
+    },
+    "youtube_auto": {
+      "file": "refs\\hi_song_youtube_auto.txt",
+      "n_ref_words": 69,
+      "n_yt_words": 63,
+      "wer": 0.2029,
+      "cer": 0.079,
+      "per_line_wer": [
+        {
+          "line": 1,
+          "n_ref_words": 9,
+          "wer": 0.0
+        },
+        {
+          "line": 2,
+          "n_ref_words": 8,
+          "wer": 0.625
+        },
+        {
+          "line": 3,
+          "n_ref_words": 10,
+          "wer": 0.3
+        },
+        {
+          "line": 4,
+          "n_ref_words": 9,
+          "wer": 0.1111
+        },
+        {
+          "line": 5,
+          "n_ref_words": 9,
+          "wer": 0.2222
+        },
+        {
+          "line": 6,
+          "n_ref_words": 9,
+          "wer": 0.1111
+        },
+        {
+          "line": 7,
+          "n_ref_words": 9,
+          "wer": 0.2222
+        },
+        {
+          "line": 8,
+          "n_ref_words": 6,
+          "wer": 0.0
+        }
+      ],
+      "first_errors": [
+        {
+          "pos": 9,
+          "ref": "नई",
+          "hyp": "नईनई",
+          "type": "substitute"
+        },
+        {
+          "pos": 10,
+          "ref": "नई",
+          "hyp": "",
+          "type": "delete"
+        },
+        {
+          "pos": 13,
+          "ref": "",
+          "hyp": "मुझ",
+          "type": "insert"
+        },
+        {
+          "pos": 13,
+          "ref": "मुझपे",
+          "hyp": "पे",
+          "type": "substitute"
+        },
+        {
+          "pos": 16,
+          "ref": "अब",
+          "hyp": "दिलशा",
+          "type": "substitute"
+        },
+        {
+          "pos": 17,
+          "ref": "दिल",
+          "hyp": "",
+          "type": "delete"
+        },
+        {
+          "pos": 18,
+          "ref": "शाद",
+          "hyp": "",
+          "type": "delete"
+        },
+        {
+          "pos": 26,
+          "ref": "अब",
+          "hyp": "",
+          "type": "delete"
+        },
+        {
+          "pos": 35,
+          "ref": "अब",
+          "hyp": "क्यों",
+          "type": "substitute"
+        },
+        {
+          "pos": 36,
+          "ref": "क्यूं",
+          "hyp": "",
+          "type": "delete"
+        }
+      ]
+    }
+  },
+  "captions_en": {
+    "n_blocks": 12,
+    "fmt_metrics": {
+      "n_blocks": 12,
+      "pct_within_2x42": 100.0,
+      "pct_within_17cps": 91.7,
+      "pct_ends_funcword": 0.0,
+      "mean_dur_s": 3.66,
+      "median_dur_s": 3.05,
+      "cps_exceptions": [
+        {
+          "text": "Why did you have to lose me?",
+          "cps": 17.0,
+          "dur": 1.65
+        }
+      ]
+    },
+    "word_split_test": "PASS",
+    "first_10_blocks": [
+      {
+        "start": 0.0,
+        "end": 7.0,
+        "lines": [
+          "I have a new feeling, you have met me"
+        ]
+      },
+      {
+        "start": 9.32,
+        "end": 15.5,
+        "lines": [
+          "I have new meeting, Khumarab"
+        ]
+      },
+      {
+        "start": 15.54,
+        "end": 21.42,
+        "lines": [
+          "I am waiting for the end of my heart"
+        ]
+      },
+      {
+        "start": 21.46,
+        "end": 23.46,
+        "lines": [
+          "I was waiting for you"
+        ]
+      },
+      {
+        "start": 26.46,
+        "end": 28.48,
+        "lines": [
+          "I thought I would meet you"
+        ]
+      },
+      {
+        "start": 29.46,
+        "end": 30.88,
+        "lines": [
+          "I was heartbroken"
+        ]
+      },
+      {
+        "start": 34.46,
+        "end": 36.107,
+        "lines": [
+          "Why did you have to lose me?"
+        ]
+      },
+      {
+        "start": 36.84,
+        "end": 37.94,
+        "lines": [
+          "What was my fate?"
+        ]
+      },
+      {
+        "start": 40.42,
+        "end": 44.5,
+        "lines": [
+          "Why did you have to leave me?"
+        ]
+      },
+      {
+        "start": 44.78,
+        "end": 46.486,
+        "lines": [
+          "Why did you have to leave me?"
+        ]
+      }
+    ],
+    "quality_note": "quality not evaluated; no English reference; sung audio; copyrighted material not redistributed",
+    "timing_method": "Within each Whisper segment, caption block start/end times are distributed proportionally to character count."
+  },
+  "privacy_note": "Lyric text is not stored in this file. Only word-level error pairs and caption timing/metrics are kept. refs/hi_song* and videos/hi_song* are in .gitignore."
+}

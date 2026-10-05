@@ -31,20 +31,28 @@ python demo_app.py --test
 
 ---
 
-## 2. Run on real media
+## 2. Play the real video with captions (most visual)
 
-The project does not bundle the local demonstration media or its transcript because
-their redistribution terms were not documented. To reproduce the real-audio run,
-add a video you are licensed to use under `videos/` and its reference transcript
-under `refs/`, then run:
+The pipeline has already been run on `videos/weekly_2015_vra.mp4`
+(White House Weekly Address, ~2:40, 424 words).
+
+Caption files in `captions/`:
+
+| File | System |
+|------|--------|
+| `weekly_2015_vra.srt` / `.vtt` | BERT unweighted punctuation + Whisper timing |
+| `baseline_weekly_2015_vra.srt` / `.vtt` | No punctuation baseline |
+
+**VLC:** `Media → Open File` (pick the MP4), then `Subtitle → Add Subtitle File`.
+
+**Chrome:** Drag the `.mp4` into a tab; right-click the video → `Show controls`.
+Chrome doesn't load external VTT from the file picker — use VLC instead.
+
+**mpv (command line):**
 
 ```bash
-python asr/run_whisper.py
-python captions/make_captions.py --punct bert
+mpv videos/weekly_2015_vra.mp4 --sub-file=captions/weekly_2015_vra.vtt
 ```
-
-The generated `.srt` and `.vtt` files can then be opened alongside the source video
-in VLC or another player that supports external captions.
 
 ---
 

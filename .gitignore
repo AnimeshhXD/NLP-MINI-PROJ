@@ -1,0 +1,16 @@
+
+# copyrighted song material - never commit
+private/
+refs/hi_song*
+refs/lyrics_full.txt
+refs/yt_captions_raw*
+asr/hi_song*
+captions/hi_song*
+vid/hi_song*
+videos/hi_song*
+videos/hindi.mp4
+
+# Generated test and Python cache files
+.pytest_cache/
+__pycache__/
+*.py[cod]

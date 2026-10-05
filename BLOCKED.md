@@ -5,6 +5,36 @@ Items are ordered by impact.
 
 ---
 
+## Hindi pipeline — video files not provided
+
+**Status (2026-10-05):** All Hindi pipeline scripts are written and smoke-tested,
+but no input files exist yet.
+
+**What is missing:**
+- `videos/hi_<name>.mp4` — Hindi video (any name with `hi_` prefix)
+- `refs/hi_<name>.txt` — Hindi transcript (Devanagari), optional (for WER)
+- `refs/hi_<name>.en.txt` — Human English translation, optional (for BLEU/chrF)
+
+**What to do:**
+1. Drop `videos/hi_<name>.mp4` (replace `<name>` with your clip name)
+2. Optionally add `refs/hi_<name>.txt` and `refs/hi_<name>.en.txt`
+3. Run the pipeline in order:
+```
+python asr/run_whisper_hi.py --video videos/hi_<name>.mp4
+python asr/nllb_translate.py --stem hi_<name>
+python captions/make_captions_hi.py --video videos/hi_<name>.mp4 --method translate --out captions/hi_<name>_translate.srt --vtt
+python captions/make_captions_hi.py --video videos/hi_<name>.mp4 --method nllb --out captions/hi_<name>_nllb.srt --vtt --bilingual
+python eval/compute_hi_eval.py --stem hi_<name>
+python human_eval/gen_hi_adequacy.py --stem hi_<name>
+python gen_hindi_results.py --stem hi_<name>
+pytest tests/test_hi_captions.py -v -k hi_<name>
+```
+4. Open `HINDI_RESULTS.md` for the final report.
+
+**Consequence:** No numbers can be computed until a video is provided.
+
+---
+
 ## Step 2 – ASR: ffmpeg not on PATH
 
 **Exact error:** `shutil.which("ffmpeg")` returns `None`.
@@ -26,19 +56,18 @@ are blocked until ffmpeg is available.
 
 ---
 
-## Task 6 – Real audio: sample media is not bundled
+## Task 6 – Real audio: ffmpeg not on PATH (video file present but cannot extract)
 
-Aggregate ASR and caption-evaluation metrics are included in `results_new/`.
-The local MP4/WAV, reference transcript, full Whisper transcript, and text captions
-are not included because their redistribution terms were not documented.
+**Status (2026-10-05):** `videos/` contains 1 file (`weekly_2015_vra.mp4`, ~34 MB)
+but ffmpeg is not on PATH so audio extraction cannot run.
 
-To reproduce Task 6, obtain media and a reference transcript that you may
-redistribute, place them in `videos/` and `refs/`, install ffmpeg, then run:
+**What Task 6 requires:**
+1. ffmpeg on PATH (see installation steps above)
+2. Run `python asr/run_whisper.py` to transcribe `videos/weekly_2015_vra.mp4`
+3. Run `python captions/make_captions.py --punct bert_uw` for captioned output
+4. Results will be written to `results_new/asr_results.json`
 
-```bash
-python asr/run_whisper.py
-python captions/make_captions.py --punct bert
-```
+**Consequence:** Task 6 is BLOCKED. This is documented here as required by the spec.
 
 ---
 

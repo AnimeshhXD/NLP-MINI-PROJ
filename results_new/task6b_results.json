@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-10-04T20:43:40Z",
+  "task1": {
+    "n_whisper_words_raw": 428,
+    "n_words_after_clean": 428,
+    "bert_label_distribution": {
+      "O": 381,
+      "COMMA": 24,
+      "PERIOD": 23,
+      "QUESTION": 0
+    },
+    "bert_blocks": 30,
+    "base_blocks": 30
+  },
+  "task2": {
+    "passed": 67,
+    "failed": 0,
+    "errors": 0,
+    "pct_passed": 100.0
+  },
+  "task3_wer": {
+    "Whisper own punct": {
+      "WER_strict": 9.43,
+      "WER_norm": 1.84
+    },
+    "BERT punct": {
+      "WER_strict": 19.1,
+      "WER_norm": 3.22
+    },
+    "No punct": {
+      "WER_strict": 28.54,
+      "WER_norm": 7.36
+    }
+  },
+  "task4_sync": {
+    "method": "sequence_alignment_difflib",
+    "n_tsv_segments": 22,
+    "n_matched": 22,
+    "mean_offset_s": 0.43,
+    "median_offset_s": 0.59,
+    "max_abs_offset_s": 1.88,
+    "min_offset_s": -1.88,
+    "max_offset_s": 1.14
+  },
+  "task6_verify_tolerance": {
+    "before": 0.05,
+    "after": 0.05,
+    "worst_gap": 0.034
+  }
+}
